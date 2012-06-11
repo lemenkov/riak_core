@@ -54,7 +54,10 @@
 -export([private_dir/0, sync/1]).
 
 -include_lib("kernel/include/file.hrl").
+
+-ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
+-endif.
 
 -define(DIR, "/tmp/riak/slide-data"). % SLF TODO: need pkg-specific data dir handling
 -define(REC_BYTES, 12).          % 4 + (size(term_to_binary(4000000000)) = 8)
