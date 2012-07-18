@@ -44,6 +44,6 @@ setup_mockring1() ->
                                  hd(riak_core_ring:my_indices(R)),
                                  'othernode2@otherhost2', R) end,
                        Ring3,[1,2,3,4,5,6]),
-    riak_core_ring_manager:set_ring_global(Ring).
+    riak_core_ring_manager:set_my_ring(Ring).
 
 -endif. %TEST.
