@@ -17,7 +17,6 @@
                   os_mon,
                   basho_stats,
                   eleveldb,
-                  pbkdf2,
                   poolboy,
                   exometer_core,
                   clique
