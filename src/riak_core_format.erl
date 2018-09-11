@@ -53,7 +53,7 @@ human_time_fmt(Fmt, Micros) ->
     {Value, Units} = human_time(Micros),
     fmt(Fmt2, [Value, Units]).
 
-%% @doc Convert a folsom_utils:now_epoch() to a universal datetime
+%% @doc Convert a UNIX Epoch time to a universal datetime
 -spec epoch_to_datetime(non_neg_integer()) -> calendar:datetime().
 epoch_to_datetime(S) ->
     Epoch = {{1970,1,1},{0,0,0}},
